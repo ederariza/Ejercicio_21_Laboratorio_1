@@ -16,15 +16,15 @@ int main(){
 
     char letra;
 
-    cout << "Ingrese un caracter: ";
+    cout << "Ingrese una letra: ";
     cin >> letra;
 
-    if(letra >=65 && letra <=90){
+    if(letra >='A' && letra <='Z'){
         letra +=32;
         cout << "Letra convertida: " << letra << endl;
     }
 
-    else if (letra >=97 && letra <=122) {
+    else if (letra >='a' && letra <='z') {
         letra -=32;
         cout << "Letra convertida: " << letra << endl;
     }
