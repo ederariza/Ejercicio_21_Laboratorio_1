@@ -9,8 +9,8 @@ Letra convertida: K
  */
 
 #include <iostream>
-
 using namespace std;
+#define DIFERENCIA 'a' - 'A'
 
 int main(){
 
@@ -20,12 +20,12 @@ int main(){
     cin >> letra;
 
     if(letra >='A' && letra <='Z'){
-        letra += 'a' - 'A';
+        letra += DIFERENCIA;
         cout << "Letra convertida: " << letra << endl;
     }
 
     else if (letra >='a' && letra <='z') {
-        letra -= 'a' - 'A';
+        letra -= DIFERENCIA;
         cout << "Letra convertida: " << letra << endl;
     }
 
