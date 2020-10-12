@@ -20,12 +20,12 @@ int main(){
     cin >> letra;
 
     if(letra >='A' && letra <='Z'){
-        letra +=32;
+        letra += 'a' - 'A';
         cout << "Letra convertida: " << letra << endl;
     }
 
     else if (letra >='a' && letra <='z') {
-        letra -=32;
+        letra -= 'a' - 'A';
         cout << "Letra convertida: " << letra << endl;
     }
 
